@@ -2,23 +2,25 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 header {
     background-color: #1b60df;
     color: #fff;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
 }
 
 nav {
     background-color: #588ced;
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
 }
 
 nav a {
     color: #fff;
+    font-size: 20px;
     text-decoration: none;
     padding: 10px 20px;
 }
@@ -28,12 +30,57 @@ section {
     margin: 20px;
 }
 
+.challenges {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.challenge {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+img {
+    border-radius: 50px;
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+}
+
+img:hover {
+    transform: translateY(3px);
+}
+
+.btn {
+    padding: 20px;
+    background: none;
+    text-decoration: none;
+    color: white;
+    background: #1b60df;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 20px;
+    width: 100px;
+    display: inline-block;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateX(3px);
+    color: #1b60df;
+    background: none;
+    border: 2px solid #1b60df;
+}
+
 footer {
     background-color: #1b60df;
     color: #fff;
     text-align: center;
     padding: 20px;
-    position: fixed;
     bottom: 0;
     width: 100%;
 }
