@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech Quiz</title>
+    <link rel="stylesheet" href="challenge1/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welkom bij deze quiz.</h1>
+        <h3>Druk op "Start Quiz" om van start te gaan!</h3>
+        <div class="quiz-content">
+            <p id="question">De vraag wordt hier weergegeven.</p>
+            <button id="start-btn" onclick="startQuiz()">Start Quiz</button>
+            <button id="speak-btn" onclick="speakQuestion()">Lees vraag voor</button>
+            <button id="answer-btn" onclick="startRecognition()">Antwoord</button>
+            <p id="feedback"></p>
+        </div>
+    </div>
+    <script src="challenge1/script.js"></script>
+</body>
+</html>
